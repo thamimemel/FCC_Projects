@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background: linear-gradient(-180deg,  rgb(235, 219, 235), #fff);
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+#title {
+    text-transform: uppercase;
+}
+
+#description {
+    font-size: 1.2em
+}
+
+.required {
+    color: red;
+    font-size: 1.1em;
+}
+#survey-form p {
+    font-size: 1.1em;
+}
+
+#submit {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}

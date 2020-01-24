@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="intro" class="text-center">
+            <h1 id="title" class="mt-4">Survey Form</h1>
+            <p id="description" class="font-italic">Thank you for taking this survey !</p>
+
+        </div>
+        <div id="survey">
+            <form id="survey-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label id="name-label" for="name"> Name <sup class="required">*</sup></label>
+                            <input id="name" class="form-control" type="text" name="name" required placeholder="Enter your name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label id="email-label" for="email"> Email <sup class="required">*</sup></label>
+                            <input id="email" class="form-control" type="email" name="email" required placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="form-group">
+                            <label id="number-label" for="number"> Age </label>
+                            <input id="number" class="form-control" type="number" name="age" min="13" max="99" placeholder="Enter yoru age">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="form-group">
+                            <label for="dropdown"> Gender </label>
+                            <select class="form-control" id="dropdown">
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Non specified</option>>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <p>What's your favorite color ?</p>
+                        <div class="row text-md-center">
+                            <div class="col-md-3">
+                                <input type="radio" name="colors" id="black" value="black">
+                                <label for="black">Black</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="radio" name="colors" id="white" value="white">
+                                <label for="white">Whtite</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="radio" name="colors" id="grey" value="grey">
+                                <label for="grey">Grey</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="radio" name="colors" id="none" value="none">
+                                <label for="none">None</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <p>What languages do you speak ?</p>
+                        <div class="row text-md-center">
+                            <div class="col-md-3">
+                                <input type="checkbox" name="languages" id="english" value="en">
+                                <label for="english">English</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="checkbox" name="languages" id="arabic" value="ar">
+                                <label for="arabic">Arabic</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="checkbox" name="languages" id="french" value="fr">
+                                <label for="french">French</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="checkbox" name="languages" id="deutsch" value="de">
+                                <label for="deutsch">Deutsch</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class='form-group'>
+                            <p>Want to leave a message ?</p>
+                            <textarea class="form-control" name="message"></textarea>
+                        </div>
+                    </div>
+                    <button id="submit" type="submit" class="btn btn-outline-dark" class="justify">Submit</button>
+                </div>
+            </form>
+        </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    </div>
+</body>
+
+</html>
