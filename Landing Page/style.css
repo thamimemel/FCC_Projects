@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap');
+* {
+   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    
+}
+h1, h2, h3, h4 {
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+p {
+   line-height: 2em;
+}
+h3 {
+  font-size: 2em;
+  padding-top: 2em;
+  padding-bottom: .75em;
+  text-align: center;
+}
+
+.features, .about, .testi, .team {
+  padding: 2.5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.describe {
+  color: #17a2b8;
+  font-size: 1.25em;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75em 0 0.75em 0;
+  background-color: #fff;
+  overflow: hidden;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-bars {
+  display: none;
+  color: #878787;
+  font-size: 1.4em;
+  margin-right: 10px;
+  cursor: pointer;
+}
+nav ul {
+  text-decoration: none;
+  margin-right: 30px;
+}
+nav h1 {
+  font-weight: bold;
+  color: #383d43;
+  margin-left: 30px;
+  cursor: pointer;
+}
+nav a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #878787;
+  margin-right: 20px;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #1b1b1a;
+  border-bottom: 1px solid #1b1b1a;
+}
+nav ul li, nav h1 {
+  display: inline-block;
+  padding: .5em;
+}
+.hero {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-image:       linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/img5.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hero h2 {
+    /* Text styles */
+    font-size: 5em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+.hero .btn {
+    /* Positioning and sizing */
+    display: inline-block;
+    width: 200px;
+    padding: 1.25em;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 50px;
+}
+.bg-white {
+  background-color: #f8f9fa;
+  color: #000 !important;
+}
+.bg-blue {
+  background-color: #2f5be7;
+}
+.bg-blue:hover {
+  background-color: #4c70e2;
+} 
+.flex {
+  display: flex;
+  padding: 2em;
+  justify-content: space-around;
+}
+.feature {
+  box-shadow: 0px 0px 10px 5px #f3f6fb;
+  margin: .5em;
+  padding: 2em;
+}
+.feature i {
+  color: #445de7;
+  font-size: 3em;
+  margin: 0.5em;
+}
+
+#video {
+  margin: 1.5em;
+}
+.about article {
+  text-align: left;
+  padding: 2em;
+}
+
+.about article p {
+  padding: 0.5em;
+}
+
+.bg-testi {
+  background-color: #ea3d56;
+}
+.testi {
+  color: #fff;
+}
+.tes {
+  margin: .5em;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background-color: #fff;
+  color: #343a40;
+}
+.fa-quote-left {
+  font-size: 2em;
+}
+.tes-by {
+  font-weight: bold;
+  margin-top: 1.25em;
+}
+.tes-job {
+  font-size: 0.75em;
+  margin-top: -0.75em;
+}
+.member {
+   margin: 2em;
+}
+.member img {
+  width: 100%;
+  height: auto;
+}
+.memeber .describe {
+  font-size: 1em;
+}
+.name {
+  font-size: 1.25em;
+  font-weight: 900;
+  margin-top: 1em;
+}
+.role {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+.social-links {
+  margin-top: 1.2em;
+  display: flex;
+  justify-content: center;
+}
+.social-links a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.4em;
+  color: #343a40;
+  font-weight: bold;
+}
+.subscribe {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  background-image:       linear-gradient(rgba(49, 91, 222, .5),rgba(49, 91, 222, 1)), url('images/img6.jpg');
+  color: #fff;
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+.subscribe h2 {
+  font-size: 3em;
+  padding: 1.5em 0 1.5em 0;
+  font-weight: 300;
+}
+.subscribe p {
+  font-size: 1.5em;
+  padding: 0 0 1.5em 0;
+  font-weight: 300;
+}
+.subscribe form {
+  padding-top: 2em;
+}
+.subscribe input {
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 25px;
+  min-width: 30%;
+  color: #fff;
+  border: 2px solid #fff;
+  outline: none;
+}
+.subscribe input::placeholder {
+  color: #fff;
+}
+.subscribe button {
+  background-color: transparent;
+  padding: 15px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.subscribe button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.gallery {
+  padding: 2.5em 0 0.5em 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.gallery .container {
+   max-width: 1100px;
+   margin: 0 auto;
+}
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pic {
+  flex: 0 0 25%;
+}
+.pic img {
+  width: 100%;
+  height: auto;
+}
+
+.social {
+  padding: 4em 0 4em 0;
+  background-color: #291734;
+  display: flex;
+  justify-content: center;
+}
+.social a {
+  color: #fff;
+  padding: 1em;
+  font-size: 2em;
+  
+}
+.madeby {
+  padding: .5em;
+  background-color: #21122a;
+  color: #fff;
+  text-align: center;
+  font-size: 0.75em;
+  font-family: cursive;
+
+}
+.madeby i {
+  color: #FF0000;
+}
+.madeby a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media all and (max-width: 800px) {
+  section {
+    padding: 2em .5em !important;
+  }
+  #video {
+    width: 100% !important;
+  }
+  .flex {
+    flex-direction: column;
+  }
+  .fa-bars {
+    display: block;
+    float: right;
+  }
+  nav ul {
+    display: none;
+  }
+  .pic {
+  flex: 0 0 50%;
+  }
+  .social {
+  flex-wrap: wrap;
+  }
+  .feature {
+    padding : 0;
+  }
+  .tes {
+    padding: .5em;
+  }
+  .member {
+    margin: 2em .5em;
+  }
+}
+
+@media all and (max-height: 775px) {
+
+  .hero h2{
+    font-size: 3em;
+  }
+  .hero h3 {
+    font-size: 1.1em;
+  }
+  .hero .btn {
+    padding: 0.5em;
+    margin-top: 10px !important;
+  }
+}
