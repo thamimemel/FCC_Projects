@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC : Documentation Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="navbar">
+        <header><h1>Python</h1></header>
+        <ul>
+            <a class="nav-link" href="#intro"><li>Intro</li></a>
+            <a class="nav-link" href="#python_2_vs_3"><li>python 2 vs 3</li></a>
+            <a class="nav-link" href="#basic_operators"><li>basic operators</li></a>
+            <a class="nav-link" href="#variables"><li>variables</li></a>
+            <a class="nav-link" href="#if_else_statment"><li>if else statment</li></a>
+            <a class="nav-link" href="#loops"><li>loops</li></a>
+            <a class="nav-link" href="#functions"><li id="last-link">functions</li></a>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="intro">
+            <header><h2>intro</h2></header>
+            <div class="content">
+                <p>Python is a popular programming language. It was created in 1991 by Guido van Rossum it was designed to for readability, and has some similarities to the English language with influence from mathematics.</p>
+                <p>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc), Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</p>
+                <p>It is used for:</p>
+                <ul>
+                    <li>web development (server-side),</li>
+                    <li>software development,</li>
+                    <li>mathematics,</li>
+                    <li>system scripting.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="main-section" id="basic_operators">
+            <header><h2>basic operators</h2></header>
+            <div class="content">
+                <p>Operators are the constructs which can manipulate the value of operands.</p>
+                <p>Consider the expression 4 + 5 = 9. Here, 4 and 5 are called operands and + is called operator.</p>
+                <h3>Types of Operator</h3>
+                <p>Python language supports the following types of operators.</p>
+                <ul>
+                    <li>Arithmetic Operators</li>
+                    <li>Comparison (Relational) Operators</li>
+                    <li>Assignment Operators</li>
+                    <li>Logical Operators</li>
+                    <li>Bitwise Operators</li>
+                    <li>Membership Operators</li>
+                    <li>Identity Operators</li>                    
+                </ul>
+            </div>
+        </section>
+
+        <section class="main-section" id="python_2_vs_3">
+            <header><h2>python 2 vs 3</h2></header>
+            <div class="content">
+                <p>Python 3 was released to fix problems present in Python 2. The nature of these changes meant that Python 3 was incompatible with Python 2. It also meant that Python 3 did not carry forward the problems of Python 2. Some aspects of Python 3 have been backported to Python 2.6 and 2.7 to make the migration to Python 3 easier.</p>
+                <p>Python 2 was supposed to be retired in 2015 but slow adoption of Python 3 led to an extended deadline of 2020. Python 2.7 will receive updates till 2020 for security and bug fixes only.</p>
+                <p>As of February 2018, it's seen on Python 3 Readiness that 348 of 360 most downloaded packages from PyPI already support Python 3.</p>
+                <p>It's expected that if ever there should be a Python 4, it will be compatible with Python 3.</p>
+            </div>
+        </section>
+
+        <section class="main-section" id="variables">
+            <header><h2>variables</h2></header>
+            <div class="content">
+                <p>Python variables do not need explicit declaration to reserve memory space. The declaration happens automatically when you assign a value to a variable. The equal sign (=) is used to assign values to variables.</p>
+                <p>The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable. For example −</p>
+                <code>
+                    #!/usr/bin/python<br>
+                    <br>
+                        counter = 100          # An integer assignment<br>
+                        miles   = 1000.0       # A floating point<br>
+                        name    = "John"       # A string<br>
+                        <br>
+                        print counter<br>
+                 </code>
+              <code>print miles<br></code>
+              <code>print name<br></code>
+
+            </div>
+        </section>
+
+        <section class="main-section" id="if_else_statment">
+            <header><h2>if else statment</h2></header>
+            <div class="content">
+                <p>Decision structures evaluate multiple expressions which produce TRUE or FALSE as outcome. You need to determine which action to take and which statements to execute if outcome is TRUE or FALSE otherwise.</p>
+                <p>Python programming language assumes any non-zero and non-null values as TRUE, and if it is either zero or null, then it is assumed as FALSE value.</p>
+                <p>Python programming language provides following types of decision making statements. Click the following links to check their detail.</p>
+                <ol>
+                    <li>
+                        <p><b>if statements : </b>
+                        An if statement consists of a boolean expression followed by one or more statements.</p>
+                    </li>
+                    <li>
+                        <p><b>if...else statements</b>
+                        An if statement can be followed by an optional else statement, which executes when the boolean expression is FALSE.</p>
+                    </li>
+                    <li>
+                        <p><b>nested if statements</b>
+                            You can use one if or else if statement inside another if or else if statement(s).</p>
+                    </li>                
+                </ol>
+                <p>Here is an example of a one-line if clause.</p>
+                <code>
+                        #!/usr/bin/python <br>
+
+                        var = 100 <br>
+                        if ( var == 100 ) : print "Value of expression is 100" <br>
+                        print "Good bye!" <br>
+                </code>
+                <p>When the above code is executed, it produces the following result</p>
+                <code>
+                    Value of expression is 100 <br>
+                    Good bye!
+                </code>
+            </div>
+        </section>
+
+        <section class="main-section" id="loops">
+            <header><h2>loops</h2></header>
+            <div class="content">
+                <p>In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on. There may be a situation when you need to execute a block of code several number of times.</p>
+                <p>Programming languages provide various control structures that allow for more complicated execution paths.</p>
+                <p>A loop statement allows us to execute a statement or group of statements multiple times. The following diagram illustrates a loop statement. Python programming language provides following types of loops to handle looping requirements.</p>
+                <ol>
+                    <li>
+                        <p><b>while loop : </b>
+                            Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body.</p> 
+                    </li>
+                    <li>
+                        <p><b>for loop : </b>
+                            Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.</p>                     
+                    </li>
+                    <li>
+                        <p><b>nested loops : </b>
+                            You can use one or more loop inside any another while, for or do..while loop.</p>                     
+                    </li>          
+                </ol>
+            </div>
+        </section>
+
+        <section class="main-section" id="functions">
+            <header><h2>functions</h2></header>
+            <div class="content">
+                <p>A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.</p>
+                <p>As you already know, Python gives you many built-in functions like print(), etc. but you can also create your own functions. These functions are called user-defined functions.</p>
+                <h3>Syntax</h3>
+                <code>
+                        def functionname( parameters ): <br>
+                        "function_docstring"<br>
+                        function_suite<br>
+                        return [expression]<br>
+                </code>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
