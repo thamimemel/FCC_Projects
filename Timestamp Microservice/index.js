@@ -20,8 +20,15 @@ app.get("/", function (req, res) {
 
 
 // your first API endpoint... 
-app.get("/api/:date", function (req, res) {
-  const date = new Date(req.params.date)
+app.get("/api/:date?", function (req, res) {
+  const param = req.params.date == parseInt(req.params.date) ? parseInt(req.params.date) : req.params.date
+  
+  let date = undefined;
+  if (param) {
+    date = new Date(param)
+  } else {
+    date = new Date()
+  }
 
   if (date == "Invalid Date") return res.json({"error": "Invalid Date"})
 
